@@ -1,0 +1,9 @@
+<h2>
+    Каталог
+</h2>
+
+{% for item in catalog %}
+    <h2><a href="/product/item/{{ item.id }}">{{ item.name }}</a></h2>
+    <img width="300px" src="/img/{{ item.link }}">
+    <p>{{ item.price }}</p>
+{% endfor %}
